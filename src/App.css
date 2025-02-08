@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+
+.rightImg{
+max-width: 1150px;
+}
+
+.hidden{
+    font-family: poppins;
+}
