@@ -1,19 +1,21 @@
 @import "tailwindcss";
 
 
-
 .rightImg {
     max-width: 1150px;
 }
 
-* {
-    font-family: "Noto Sans", serif;
+*{
+  font-family: "Mulish", serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+
 }
-.skills img{
+
+
+
+.skills img {
     max-width: 80px;
 }
+
