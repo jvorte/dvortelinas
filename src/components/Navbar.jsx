@@ -1,13 +1,14 @@
-
 // Import necessary dependencies
 
  import React, { useState } from 'react';
+
 // Import icons we'll use for our navbar
 import {
   FaBars,
-   FaGitSquare ,
+  FaGitSquare ,
   FaLinkedin,
 } from 'react-icons/fa';
+
 import { HiOutlineMail } from "react-icons/hi";
 // Import Link for smooth scrolling between sections
 import { Link } from 'react-scroll';
@@ -19,7 +20,7 @@ const Navbar = () => {
 
   return (
     // Main navbar container - fixed at top, full width
-    <div className='fixed w-full h-20 flex justify-between items-center px-4  text-lg text-black-800'>
+    <div className='fixed w-full h-20 flex justify-between items-center px-4 bg-[#2B2C30]  text-lg text-white'>
       {/* Your logo or brand name */}
       <div>
         <h1 className='font-thin text-2xl italic font-serif'></h1>
@@ -75,18 +76,18 @@ const Navbar = () => {
         <ul>
           {/* LinkedIn - sliding animation on hover */}
           <li className='w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 rounded-lg'>
-            <a href="https://linkedin.com" className='flex justify-between items-center w-full text-gray-300 px-4'>
-              LinkedIn <FaLinkedin size={30} />
+            <a href="https://www.linkedin.com/in/dimitris-vortelinas-757025269/" className='flex justify-between items-center w-full text-gray-300 px-4'>
+              LinkedIn <FaLinkedin size={35} />
             </a>
           </li>
           <li className='w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-700 rounded-lg'>
-            <a href="https://linkedin.com" className='flex justify-between items-center w-full text-gray-300 px-4'>
-              GitHub <FaGitSquare  size={30} />
+            <a href="https://github.com/jvorte" className='flex justify-between items-center w-full text-gray-300 px-4'>
+              GitHub <FaGitSquare  size={35} />
             </a>
           </li>
           <li className='w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-rose-600 rounded-lg'>
-            <a href="https://linkedin.com" className='flex justify-between items-center w-full text-gray-300 px-4'>
-              Mail <HiOutlineMail   size={30} />
+            <a href="/Contact" className='flex justify-between items-center w-full text-gray-300 px-4'>
+              Mail <HiOutlineMail   size={35} />
             </a>
           </li>
          

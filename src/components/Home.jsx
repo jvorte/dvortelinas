@@ -1,8 +1,8 @@
-
+import { FaHtml5 } from "react-icons/fa";
 // Import required components and assets
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi'; // Arrow icon for button
-import me from '../assets/me.png'; // Your profile photo
+
 import { Link } from "react-scroll"; // For smooth scrolling
 
 const Home = () => {
@@ -41,7 +41,7 @@ const Home = () => {
        </div>
        {/* Right side - Profile image */}
        <div className='mb-4 rightImg'>
-      <img src="/src/assets\mac.png" alt="mac" />
+      <img src="/src/assets/8.png" alt="desk" />
        </div>
      </div>
    </div>
