@@ -45,7 +45,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen flex justify-center items-center p-4"
+      className="w-full h-screen flex justify-center items-center p-4 "
     >
       <div className="flex flex-col max-w-[600px] w-full bg-white p-8  rounded-lg">
         <div className="pb-8 flex flex-col justify-center w-full items-center">
@@ -67,7 +67,7 @@ const Contact = () => {
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
             <input
-              className="bg-slate-400  p-2 rounded-lg"
+              className="bg-slate-400  p-2 rounded-lg shadow-xl"
               type="text"
               placeholder="Name"
               name="name"
@@ -77,7 +77,7 @@ const Contact = () => {
             />
 
             <input
-              className="my-4 p-2 bg-slate-400 rounded-lg"
+              className="my-4 p-2 bg-slate-400 rounded-lg shadow-xl"
               type="email"
               placeholder="Email"
               name="email"
@@ -87,7 +87,7 @@ const Contact = () => {
             />
 
             <textarea
-              className="bg-slate-400  p-2 rounded-lg"
+              className="bg-slate-400  p-2 rounded-lg shadow-xl"
               name="message"
               rows="10"
               placeholder="Message"
@@ -98,7 +98,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-slate-400  text-white border-1 hover:bg-gray-500 hover:border-slate-800 rounded-lg px-4 py-2 my-7 mx-auto flex items-center"
+              className="bg-slate-400  text-white border-1 shadow-xl hover:bg-gray-500 hover:border-slate-800 rounded-lg px-4 py-2 my-7 mx-auto flex items-center"
             >
               Send
             </button>

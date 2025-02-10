@@ -45,21 +45,35 @@ const Navbar = () => {
         {!nav ? <FaBars size={20} /> : <FaTimes size={20} />}
       </div>
 
-      <ul className={`absolute top-0 left-0 w-full h-screen bg-slate-900 flex flex-col justify-center items-center transition-transform duration-300 ${nav ? 'translate-x-0' : '-translate-x-full'} z-40`}>
-        <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
-            Home
-          </Link>
-          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
-            Home
-          </Link>
-          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
-            Home
-          </Link>
-          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
+      <ul className={`absolute top-0 left-0 w-full h-screen bg-[#2B2C30] flex flex-col justify-center items-center transition-transform duration-300 ${nav ? 'translate-x-0'  : '-translate-x-full'} z-40`}>
+      <ul className={`absolute top-0 left-0 w-full h-screen bg-[#2B2C30] flex flex-col justify-center items-center transition-transform duration-300 ${nav ? 'translate-x-0'  : '-translate-x-full'} z-40`}>
+  <li className="py-6 text-4xl">
+    <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+      Home
+    </Link>
+  </li>
+  <li className="py-6 text-4xl">
+    <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+      About
+    </Link>
+  </li>
+  <li className="py-6 text-4xl">
+    <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+      Skills
+    </Link>
+  </li>
+  <li className="py-6 text-4xl">
+    <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+      My Projects
+    </Link>
+  </li>
+  <li className="py-6 text-4xl">
+    <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+      Contact
+    </Link>
+  </li>
+</ul>
+
       </ul>
 
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
