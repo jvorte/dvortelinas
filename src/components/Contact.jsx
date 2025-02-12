@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-
+import { useTranslation } from 'react-i18next';
 const Contact = () => {
+    const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -50,9 +51,9 @@ const Contact = () => {
       <div className="flex flex-col max-w-[600px] w-full bg-white p-8  rounded-lg">
         <div className="pb-8 flex flex-col justify-center w-full items-center">
           <p className="text-4xl font-bold inline border-b-4 border-cyan-500 text-gray-800">
-            Contact
+            {t('contact')}
           </p>
-          <p className="text-gray-800 py-4">Send me a message</p>
+          <p className="text-gray-800 py-4">{t('subContact')}</p>
         </div>
 
         {isSubmitted ? (
@@ -100,7 +101,7 @@ const Contact = () => {
               type="submit"
               className="bg-slate-400  text-white border-1 shadow-xl hover:bg-gray-500 hover:border-slate-800 rounded-lg px-4 py-2 my-7 mx-auto flex items-center"
             >
-              Send
+              {t('formButton')}
             </button>
           </form>
         )}

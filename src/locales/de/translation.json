@@ -1,0 +1,22 @@
+{
+    "homeTile":  "Ich bin ein Full Stack Web Developer",
+    "homeSubTitle": "Ich habe 4 Jahre Erfahrung im Grafikdesign und in der Webentwicklung. Derzeit arbeite ich gerne an Webanwendungen mit Technologien wie React, Tailwind, Next.js und Mongodb.",
+    "homeButton": "Uber mich",
+    "aboutmeL": "Hallo. Ich bin ein Full-Stack-Entwickler | PHP (Laravel) → React & Node.js |Leidenschaft für skalierbare Web-Apps.",
+  "aboutmeR": "Ich bin ein engagierter Full-Stack-Entwickler mit fundierten Kenntnissen in PHP (Symfony & Laravel) und wachsender Expertise in JavaScript, React und Node.js. Mit einem scharfen Auge für sauberen Code und skalierbare Architekturen erstelle ich gerne leistungsstarke Webanwendungen, die nahtlose Benutzererlebnisse bieten.",
+  "aboutmeR1":"Kenntnisse: PHP (Symfony, Laravel), JavaScript (ES6+), React, Node.js, REST-APIs, SQL- und NoSQL-Datenbanken",
+  "aboutmeR2":"Auf der Suche nach: Remote-Möglichkeiten in der modernen Full-Stack-Entwicklung",
+  "aboutmeR3":"Leidenschaft für: das Schreiben von wartbarem Code, Problemlösung und kontinuierliches Lernen",
+  "skills":"Fähigkeiten",
+  "subSkills":"Ich tauche gern in neue Dinge ein und lerne gerne Neues. Hier ist eine Liste der Technologien, mit denen ich gearbeitet habe",
+  "projects":"Projekte",
+  "subProjects":"Schauen Sie sich einige meiner neuesten Arbeiten an",
+  "contact":"Kontakt",
+  "subContact":"Senden Sie mir eine Nachricht",
+      "formButton":"Schicken",
+        "":"",
+          "":""
+
+  
+  }
+  
