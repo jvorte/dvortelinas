@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 const Skills = () => {
     const { t } = useTranslation();
   return (
-    <div name='skills' className='w-full min-h-screen bg-gray-100 text-gray-800 py-20'>
+    <div name='skills' className=' bg-gray-100 w-full min-h-screen text-gray-800 pt-20'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className='w-full flex justify-center items-center flex-col mb-7'>
           <p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-center'>{t('skills')}</p>

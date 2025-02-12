@@ -7,15 +7,16 @@ import { GrLanguage } from "react-icons/gr";
 
 
   const Navbar = () => {
+    
   const { t, i18n } = useTranslation();
   const [nav, setNav] = useState(false);
   const [languageDropdown, setLanguageDropdown] = useState(false);
-
   const handleClick = () => setNav(!nav);
-
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
     setLanguageDropdown(false); // Κλείσιμο dropdown μετά την επιλογή
+  
+  
   };
 
   return (
