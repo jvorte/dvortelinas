@@ -4,8 +4,10 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import { GrLanguage } from "react-icons/gr";
-const Navbar = () => {
-  const { i18n } = useTranslation();
+
+
+  const Navbar = () => {
+  const { t, i18n } = useTranslation();
   const [nav, setNav] = useState(false);
   const [languageDropdown, setLanguageDropdown] = useState(false);
 
@@ -26,27 +28,27 @@ const Navbar = () => {
       <ul className="hidden md:flex gap-x-8">
         <li>
           <Link to="home" smooth={true} duration={500}>
-            Home
+            {t('navHome')}
           </Link>
         </li>
         <li>
           <Link to="about" smooth={true} duration={500}>
-            About
+          {t('navAbout')}
           </Link>
         </li>
         <li>
           <Link to="skills" smooth={true} duration={500}>
-            Skills
+          {t('navSkills')}
           </Link>
         </li>
         <li>
           <Link to="work" smooth={true} duration={500}>
-            My Projects
+          {t('navProjects')}
           </Link>
         </li>
         <li>
           <Link to="contact" smooth={true} duration={500}>
-            Contact
+          {t('navConatact')}
           </Link>
         </li>
         {/* Language Dropdown for Desktop */}
@@ -89,27 +91,26 @@ const Navbar = () => {
       >
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-            Home
+          {t('navHome')}
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-            About
+          {t('navAbout')}
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Skills
+          {t('navSkills')}
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-            My Projects
-          </Link>
+          {t('navProjects')}          </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-            Contact
+          {t('navConatact')}
           </Link>
         </li>
 

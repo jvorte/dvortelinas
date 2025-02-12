@@ -1,5 +1,11 @@
 {
-    "homeTile":  "Ich bin ein Full Stack Web Developer",
+   
+  "navHome":"Home",
+  "navAbout":"Uber mich",
+  "navSkills":"Fähigkeiten",
+  "navProjects":"Projekte",
+  "navConatact":"Kontakt",  
+  "homeTile":  "Ich bin ein Full Stack Web Developer",
     "homeSubTitle": "Ich habe 4 Jahre Erfahrung im Grafikdesign und in der Webentwicklung. Derzeit arbeite ich gerne an Webanwendungen mit Technologien wie React, Tailwind, Next.js und Mongodb.",
     "homeButton": "Uber mich",
     "aboutmeL": "Hallo. Ich bin ein Full-Stack-Entwickler | PHP (Laravel) → React & Node.js |Leidenschaft für skalierbare Web-Apps.",
