@@ -26,7 +26,7 @@ const Works = () => {
             <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-1 rounded-lg">
                 <p className="text-white">Weather App  Tailwind CSS & JS</p>
-                <p className="text-center line-clamp-7 text-center">
+                <p className="text-center line-clamp-7">
                   A simple weather app built with JavaScript and styled with Tailwind CSS. It fetches real-time weather data from
                   a public API, providing users with temperature, humidity, and conditions for any city.
                 </p>
@@ -56,7 +56,7 @@ const Works = () => {
             <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
                 <p className="text-white">PHP & React.js CRUD App</p>
-                <p className="text-center line-clamp-7 text-center">
+                <p className="text-center line-clamp-7">
              Application This repository contains a simple CRUD (Create, Read, Update, Delete)
                  application built using PHP for the backend and React.js for the frontend.
                 </p>
@@ -86,7 +86,7 @@ const Works = () => {
             <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
                 <p className="text-white">ReactShop</p>
-                <p className="text-center line-clamp-7 text-center">
+                <p className="text-center line-clamp-7">
                 This is a simple e-commerce web application built with React. The application 
                 allows users to browse products, add them to the cart, and proceed to checkout.
                 </p>
@@ -116,9 +116,8 @@ const Works = () => {
             <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
                 <p className="text-white">Veterinary</p>
-                <p className="text-center line-clamp-7 text-center">
+                <p className="text-center line-clamp-7">
                 A simple and efficient appointment booking system where only customers can schedule appointments.
-
                  Built with PHP and SQL, this project ensures a smooth and reliable booking experience.
                 </p>
               </div>
@@ -148,7 +147,7 @@ const Works = () => {
             <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
                 <p className="text-white">Dog Training</p>
-                <p className="text-center line-clamp-7 text-center">
+                <p className="text-center line-clamp-7 ">
                 A user-friendly platform offering dog training services with a focus on building strong, positive relationships 
                 between dogs and their owners. The site features personalized training plans and an easy-to-navigate interface.
              
