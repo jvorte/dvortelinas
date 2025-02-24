@@ -42,6 +42,12 @@ const Skills = () => {
           <div className='hover:scale-110 duration-500'>
             <img src="/github.svg" alt="GitHub" className="w-20 h-20 mx-auto" />
           </div>
+          <div className='hover:scale-110 duration-500'>
+            <img src="/bootstrap.svg" alt="GitHub" className="w-20 h-20 mx-auto" />
+          </div>
+          <div className='hover:scale-110 duration-500'>
+            <img src="/docker.svg" alt="GitHub" className="w-20 h-20 mx-auto" />
+          </div>
         </div>
       </div>
     </div>
