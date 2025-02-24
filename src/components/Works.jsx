@@ -26,7 +26,7 @@ const Works = () => {
             <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
                 <p className="text-white">Weather App with Tailwind CSS & JavaScript</p>
-                <p className="text-center">
+                <p className="text-center line-clamp-3 text-center">
                   A simple weather app built with JavaScript and styled with Tailwind CSS. It fetches real-time weather data from
                   a public API, providing users with temperature, humidity, and conditions for any city.
                 </p>
@@ -56,7 +56,7 @@ const Works = () => {
             <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
                 <p className="text-white">PHP & React.js CRUD Application</p>
-                <p className="text-center">
+                <p className="text-center line-clamp-3 text-center">
                 PHP & React.js CRUD Application This repository contains a simple CRUD (Create, Read, Update, Delete)
                  application built using PHP for the backend and React.js for the frontend.
                 </p>
@@ -86,7 +86,7 @@ const Works = () => {
             <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
                 <p className="text-white">ReactShop</p>
-                <p className="text-center">
+                <p className="text-center line-clamp-3 text-center">
                 This is a simple e-commerce web application built with React. The application 
                 allows users to browse products, add them to the cart, and proceed to checkout.
                 </p>
@@ -116,7 +116,7 @@ const Works = () => {
             <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
                 <p className="text-white">Veterinary</p>
-                <p className="text-center">
+                <p className="text-center line-clamp-3 text-center">
                 A simple and efficient appointment booking system where only customers can schedule appointments.
 
                  Built with PHP and SQL, this project ensures a smooth and reliable booking experience.
@@ -148,7 +148,7 @@ const Works = () => {
             <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
                 <p className="text-white">Dog Training</p>
-                <p className="text-center">
+                <p className="text-center line-clamp-3 text-center">
                 A user-friendly platform offering dog training services with a focus on building strong, positive relationships 
                 between dogs and their owners. The site features personalized training plans and an easy-to-navigate interface.
              
@@ -181,7 +181,7 @@ const Works = () => {
             <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
                 <p className="text-white">User Login Portal</p>
-                <p className="text-center">
+                <p className="text-center line-clamp-3 text-center">
                 A secure and simple login portal where users can access their accounts by entering a 
                 username and password. The platform also offers password recovery and account creation options. 
                 Designed with user experience in mind, it ensures easy access and interaction for both new and returning users. 
@@ -214,7 +214,7 @@ const Works = () => {
             <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
                 <p className="text-white">Hair-Studio</p>
-                <p className="text-center">
+                <p className="text-center line-clamp-3 text-center">
                 Hair Studio is a simple, single-page website built with React. This website is designed for a hair salon, 
                 showcasing the services, contact information, 
                 and a brief introduction to the salon. It aims to provide an elegant and responsive user experience for visitors.
