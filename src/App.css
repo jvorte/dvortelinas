@@ -18,4 +18,6 @@
 .skills img {
     max-width: 80px;
 }
-
+.card{
+  max-height: 300px;
+}
