@@ -41,7 +41,7 @@ const Home = () => {
        </div>
        {/* Right side - Profile image */}
        <div className='mb-4 rightImg'>
-      <img src="/src/assets/8.png" alt="desk" />
+      <img src="/8.png" alt="desk" />
        </div>
      </div>
    </div>
