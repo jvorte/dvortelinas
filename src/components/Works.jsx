@@ -16,7 +16,36 @@ const Works = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4">
 
+     {/* Project 0 */}
 
+     <div
+            style={{ backgroundImage: `url('/projects/pasta.png')` }}
+            className="card shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div bg-no-repeat bg-cover bg-center h-65"
+          >
+            {/* Hover content */}
+            <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
+              <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
+                <p className="text-white">True Pasta Lovers</p>
+                <p className="text-center line-clamp-7">
+                Pasta Recipes App – A modern web application built with Laravel and Tailwind CSS, designed for exploring and managing pasta recipes. Users can browse, add, and edit recipes, making it a simple yet effective tool for pasta enthusiasts.
+       
+                </p>
+              </div>
+              {/* Action buttons */}
+              <div className="text-center">
+                <a href="https://darkslategrey-baboon-511135.hostingersite.com/">
+                  <button className=" shadow-lg shadow-[#040c16] text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Visit
+                  </button>
+                </a>
+                <a href="https://darkslategrey-baboon-511135.hostingersite.com/">
+                  <button className=" shadow-lg shadow-[#040c16]  text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
           {/* Project 1 */}
           <div
             style={{ backgroundImage: `url('/projects/weather.jpg')` }}
