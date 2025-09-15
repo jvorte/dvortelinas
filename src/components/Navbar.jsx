@@ -1,197 +1,198 @@
-import React, { useState } from 'react';
-import { FaBars, FaTimes, FaGitSquare, FaLinkedin ,} from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
-import { Link } from 'react-scroll';
-import { useTranslation } from 'react-i18next';
+import React, { useState, useEffect } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
+import { FaBars, FaTimes, FaLinkedin, FaGithub,  FaEnvelope } from "react-icons/fa";
 import { GrLanguage } from "react-icons/gr";
+import { useTranslation } from "react-i18next";
+import { House,LibraryBig , Cpu,FolderKanban, SquareUserRound } from 'lucide-react';
 
 
-  const Navbar = () => {
-    
+const Navbar = () => {
   const { t, i18n } = useTranslation();
-  const [nav, setNav] = useState(false);
-  const [languageDropdown, setLanguageDropdown] = useState(false);
-  const handleClick = () => setNav(!nav);
+  const [navOpen, setNavOpen] = useState(false);
+  const [langDropdown, setLangDropdown] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const toggleNav = () => setNavOpen(!navOpen);
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
-    setLanguageDropdown(false); // Κλείσιμο dropdown μετά την επιλογή
-  
-  
+    setLangDropdown(false);
   };
 
-  return (
-    <div className="fixed w-full h-[60px] flex justify-between items-center px-5 bg-[#2B2C30] text-lg text-white z-50">
-      <div>
-        <h1 className="font-thin text-2xl italic font-serif"></h1>
-      </div>
+  // Μενού αντικείμενα με label, to (scroll target) και icon React component
+  const menuItems = [
+    { to: "home", label: t("navHome"), icon: <House />},
+    { to: "about", label: t("About me"), icon: <LibraryBig /> },
+    { to: "skills", label: t("navSkills"), icon: <Cpu /> },
+    { to: "work", label: t("navProjects"), icon: <FolderKanban />},
+    { to: "contact", label: t("Contact"), icon: <SquareUserRound /> },
+  ];
 
-      {/* Desktop Menu */}
-      <ul className="hidden md:flex gap-x-8">
-        <li>
-          <Link to="home" smooth={true} duration={500}>
-            {t('navHome')}
-          </Link>
-        </li>
-        <li>
-          <Link to="about" smooth={true} duration={500}>
-          {t('navAbout')}
-          </Link>
-        </li>
-        <li>
-          <Link to="skills" smooth={true} duration={500}>
-          {t('navSkills')}
-          </Link>
-        </li>
-        <li>
-          <Link to="work" smooth={true} duration={500}>
-          {t('navProjects')}
-          </Link>
-        </li>
-        <li>
-          <Link to="contact" smooth={true} duration={500}>
-          {t('navConatact')}
-          </Link>
-        </li>
-        {/* Language Dropdown for Desktop */}
-        <li className="relative">
-          <button
-            onClick={() => setLanguageDropdown(!languageDropdown)}
-            className="bg-gray-700 px-4 py-2 rounded-md"
-          >
-            <GrLanguage />
-          </button>
-          {languageDropdown && (
-            <ul className="absolute right-0 mt-2 bg-gray-800 text-white rounded-md shadow-lg">
-              <li
-                className="px-4 py-2 hover:bg-gray-600 cursor-pointer"
-                onClick={() => changeLanguage('en')}
+  return (
+    <nav className="sticky top-0 z-50 bg-white shadow-md">
+      <div className="container mx-auto flex justify-between items-center h-16 px-5 text-gray-800">
+
+        {/* Logo */}
+        <div className="text-2xl font-serif italic font-thin cursor-pointer" onClick={() => scroll.scrollToTop()}>
+       {/* logo */}
+        </div>
+
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex gap-8 items-center text-lg">
+          {menuItems.map(({ to, label, icon }) => (
+            <li key={to}>
+              <Link
+                to={to}
+                spy={true}
+                smooth={true}
+                duration={500}
+                activeClass="text-amber-500 font-bold border-b-2 border-amber-500"
+                className="flex items-center gap-2 cursor-pointer hover:text-amber-500 transition"
               >
-                En
+                {icon}
+                {label}
+              </Link>
+            </li>
+          ))}
+
+          {/* Language selector */}
+          <li className="relative">
+    <button
+            onClick={() => setLangDropdown(!langDropdown)}
+            className="flex items-center px-6 py-3 rounded-md  transition"
+          >
+            <GrLanguage size={24} />
+            <span className="ml-2">{i18n.language.toUpperCase()}</span>
+          </button>
+          {langDropdown && (
+            <ul className="mt-2 bg-gray-800 text-white rounded-md shadow-lg w-32 mx-auto">
+              <li
+                className="px-4 py-2 cursor-pointer hover:bg-gray-600"
+                onClick={() => changeLanguage("en")}
+              >
+                English
               </li>
               <li
-                className="px-4 py-2 hover:bg-gray-600 cursor-pointer"
-                onClick={() => changeLanguage('de')}
+                className="px-4 py-2 cursor-pointer hover:bg-gray-600"
+                onClick={() => changeLanguage("de")}
               >
-                De
+                Deutsch
               </li>
             </ul>
           )}
         </li>
       </ul>
 
-      {/* Hamburger Icon */}
-      <div onClick={handleClick} className="md:hidden z-50 cursor-pointer">
-        {!nav ? <FaBars size={20} /> : <FaTimes size={20} />}
+        {/* Hamburger for mobile */}
+        <div className="md:hidden z-50 cursor-pointer" onClick={toggleNav}>
+          {navOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+        </div>
       </div>
 
       {/* Mobile Menu */}
-      <ul
-        className={`absolute top-0 left-0 w-full h-screen bg-[#2B2C30] flex flex-col justify-center items-center transition-transform duration-300 ${
-          nav ? 'translate-x-0' : '-translate-x-full'
-        } z-40`}
-      >
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-          {t('navHome')}
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-          {t('navAbout')}
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-          {t('navSkills')}
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-          {t('navProjects')}          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-          {t('navConatact')}
-          </Link>
-        </li>
-
-        {/* Language Dropdown for Mobile */}
-        <li className="py-6 text-4xl">
-          <div className="relative">
-            <button
-              onClick={() => setLanguageDropdown(!languageDropdown)}
-              className="bg-gray-700 px-4 py-2 rounded-md text-xl"
+   <ul
+  className={`md:hidden fixed top-0 left-0 w-full h-screen text-white sm:text-amber-500 bg-gray-900 bg-opacity-95 flex flex-col justify-center items-center text-3xl gap-10 transform transition-transform duration-300 ${
+    navOpen ? "translate-x-0" : "-translate-x-full"
+  }`}
+>
+        {menuItems.map(({ to, label, icon }) => (
+          <li key={to}>
+            <Link
+              to={to}
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => setNavOpen(false)}
+              activeClass="text-amber-400 font-bold"
+              className="flex items-center gap-3 cursor-pointer hover:text-amber-400 transition "
             >
-              <GrLanguage />
-            </button>
-            {languageDropdown && (
-              <ul className="absolute top-12 left-0 bg-gray-800 text-white rounded-md shadow-lg">
-                <li
-                  className="px-4 py-2 hover:bg-gray-600 cursor-pointer"
-                  onClick={() => changeLanguage('en')}
-                >
-                  En
-                </li>
-                <li
-                  className="px-4 py-2 hover:bg-gray-600 cursor-pointer"
-                  onClick={() => changeLanguage('de')}
-                >
-                  De
-                </li>
-              </ul>
-            )}
-          </div>
+              {icon}
+              {label}
+            </Link>
+          </li>
+        ))}
+
+        {/* Language selector mobile */}
+        <li className="mt-8">
+          <button
+            onClick={() => setLangDropdown(!langDropdown)}
+            className="flex items-center px-6 py-3 bg-gray-700 rounded-md text-white hover:bg-gray-600 transition"
+          >
+            <GrLanguage size={24} />
+            <span className="ml-2">{i18n.language.toUpperCase()}</span>
+          </button>
+          {langDropdown && (
+            <ul className="mt-2 bg-gray-800 text-white rounded-md shadow-lg w-32 mx-auto">
+              <li
+                className="px-4 py-2 cursor-pointer hover:bg-gray-600"
+                onClick={() => changeLanguage("en")}
+              >
+                English
+              </li>
+              <li
+                className="px-4 py-2 cursor-pointer hover:bg-gray-600"
+                onClick={() => changeLanguage("de")}
+              >
+                Deutsch
+              </li>
+            </ul>
+          )}
         </li>
-        <div className="flex justify-center gap-6 mt-6">
-          <a
-            href="https://www.linkedin.com/in/dimitris-vortelinas-757025269/"
-            className="text-3xl text-blue-500 hover:text-blue-600"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="https://github.com/jvorte"
-            className="text-3xl text-gray-400 hover:text-gray-300"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGitSquare />
-          </a>
-          <a href="/Contact" className="text-3xl text-rose-500 hover:text-rose-600">
-            <HiOutlineMail />
-          </a>
-        </div>
       </ul>
 
-      {/* Social Icons (Left Side) */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0 z-50">
-        <ul>
-          <li className="w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 rounded-lg">
-            <a
-              href="https://www.linkedin.com/in/dimitris-vortelinas-757025269/"
-              className="flex justify-between items-center w-full text-gray-300 px-4"
-            >
-              LinkedIn <FaLinkedin size={35} />
-            </a>
-          </li>
-          <li className="w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-700 rounded-lg">
-            <a
-              href="https://github.com/jvorte"
-              className="flex justify-between items-center w-full text-gray-300 px-4"
-            >
-              GitHub <FaGitSquare size={35} />
-            </a>
-          </li>
-          <li className="w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-rose-600 rounded-lg">
-            <a href="/Contact" className="flex justify-between items-center w-full text-gray-300 px-4">
-              Mail <HiOutlineMail size={35} />
-            </a>
-          </li>
-        </ul>
+      {/* Social Icons fixed left */}
+      <div className="hidden lg:flex fixed top-[35%] left-0 flex-col space-y-3 z-50">
+        <a
+          href="https://www.linkedin.com/in/dimitris-vortelinas-757025269/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center w-40 h-14 bg-blue-600 text-white rounded-r-lg px-4 hover:bg-blue-700 transition ml-[-130px] hover:ml-0 duration-300"
+        >
+          LinkedIn <FaLinkedin size={30} className="ml-auto" />
+        </a>
+        <a
+          href="https://github.com/jvorte"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center w-40 h-14 bg-gray-800 text-white rounded-r-lg px-4 hover:bg-gray-900 transition ml-[-130px] hover:ml-0 duration-300"
+        >
+          GitHub <FaGithub size={30} className="ml-auto" />
+        </a>
+        <a
+          href="mailto:your-email@example.com"
+          className="flex items-center w-40 h-14 bg-red-600 text-white rounded-r-lg px-4 hover:bg-red-700 transition ml-[-130px] hover:ml-0 duration-300"
+        >
+          Gmail <FaEnvelope size={30} className="ml-auto" />
+        </a>
       </div>
-    </div>
+
+      {/* Scroll To Top Button */}
+      {showScrollTop && (
+        <button
+          onClick={() => scroll.scrollToTop({ duration: 500, smooth: true })}
+          className="fixed bottom-6 right-6 bg-amber-500 text-white p-3 rounded-full shadow-lg hover:bg-amber-600 transition z-50"
+          aria-label="Scroll to top"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
+          </svg>
+        </button>
+      )}
+    </nav>
   );
 };
 

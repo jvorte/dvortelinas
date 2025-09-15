@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import { useTranslation } from 'react-i18next';
-
-
+import { useTranslation } from "react-i18next";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -33,46 +32,47 @@ const Contact = () => {
       .then(
         (result) => {
           console.log("Message sent:", result.text);
-          setIsSubmitted(true); // Mark the form as submitted
-          setFormData({ name: "", email: "", message: "" }); // Clear form data
-
+          setIsSubmitted(true);
+          setFormData({ name: "", email: "", message: "" });
           setTimeout(() => {
-            setIsSubmitted(false); // Reset the form after 3 seconds
+            setIsSubmitted(false);
           }, 3000);
         },
         (error) => {
           console.log("Error:", error.text);
         }
       );
-      
   };
 
   return (
     <div
       name="contact"
-      className="w-full h-screen flex justify-center items-center  min-h-screen text-gray-800 pt-20"
+      className="w-full min-h-screen flex justify-center items-center pt-20 bg-gradient-to-b from-zinc-300 to-white text-gray-800"
     >
-      <div className="flex flex-col max-w-[780px] w-full bg-white p-8  rounded-lg">
+      <div className="flex flex-col max-w-[980px] w-full bg-white p-8 rounded-lg shadow-lg drop-shadow-lg">
         <div className="pb-8 flex flex-col justify-center w-full items-center">
-          <p className="text-4xl font-bold inline border-b-4 border-cyan-500 text-gray-800">
-            {t('contact')}
+          <p className="text-4xl font-bold inline border-b-4 border-orange-500">
+            {t("contact")}
           </p>
-          <p className="text-gray-800 py-4">{t('subContact')}</p>
+          <p className="text-gray-700 py-3 max-w-xl text-center">
+            {t("subContact") ||
+              "Feel free to reach out! I usually reply within 24 hours."}
+          </p>
         </div>
 
         {isSubmitted ? (
-          <div className="text-center">
-            <p className="text-xl text-green-500">
-              Your message has been sent!
+          <div className="text-center py-8">
+            <p className="text-xl text-green-600 font-semibold">
+              {t("messageSent") || "Your message has been sent!"}
             </p>
             <p className="text-gray-500 mt-2">
-              We will get back to you shortly.
+              {t("messageResponse") || "We will get back to you shortly."}
             </p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+          <form onSubmit={handleSubmit} className="flex flex-col space-y-5">
             <input
-              className="bg-slate-400  p-2 rounded-lg shadow-xl"
+              className="bg-gray-100 border border-gray-300 p-3 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"
               type="text"
               placeholder="Name"
               name="name"
@@ -80,9 +80,8 @@ const Contact = () => {
               onChange={handleChange}
               required
             />
-
             <input
-              className="my-4 p-2 bg-slate-400 rounded-lg shadow-xl"
+              className="bg-gray-100 border border-gray-300 p-3 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"
               type="email"
               placeholder="Email"
               name="email"
@@ -90,11 +89,10 @@ const Contact = () => {
               onChange={handleChange}
               required
             />
-
             <textarea
-              className="bg-slate-400  p-2 rounded-lg shadow-xl"
+              className="bg-gray-100 border border-gray-300 p-3 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"
               name="message"
-              rows="10"
+              rows="6"
               placeholder="Message"
               value={formData.message}
               onChange={handleChange}
@@ -103,12 +101,41 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-slate-400  text-white border-1 shadow-xl hover:bg-gray-500 hover:border-slate-800 rounded-lg px-4 py-2 my-7 mx-auto flex items-center"
+              className="bg-orange-400 hover:bg-orange-800 text-white font-semibold py-3 rounded-md shadow-md transition"
             >
-              {t('formButton')}
+              {t("formButton") || "Send Message"}
             </button>
           </form>
         )}
+
+        {/* Social Icons */}
+        <div className="flex justify-center gap-8 mt-10">
+          <a
+            href="https://www.linkedin.com/in/dimitris-vortelinas-757025269/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyan-600 hover:text-cyan-800 transition text-3xl"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/jvorte"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-700 hover:text-gray-900 transition text-3xl"
+            aria-label="GitHub"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="mailto:your.email@example.com"
+            className="text-rose-600 hover:text-rose-800 transition text-3xl"
+            aria-label="Email"
+          >
+            <FaEnvelope />
+          </a>
+        </div>
       </div>
     </div>
   );

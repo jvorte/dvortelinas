@@ -1,25 +1,38 @@
 {
-    "navHome":"Home",
-    "navAbout":"About",
-    "navSkills":"Skills",
-    "navProjects":"Projects",
-    "navConatact":"Contact",  
-  "homeTile": " I'm a Full Stack Web Developer",
-    "homeSubTitle": "I have 4 years of experience in graphics design and web development. Currently, I love to work on web application using technologies like React, Tailwind, Next.js and Mongodb.",
-  "homeButton": "About me",
-    "aboutmeL": "   Hi. I'm a Full-Stack Developer | PHP (Laravel) → React & Node.js |Passion for Scalable Web Apps.",
-    "aboutmeR": "I am a dedicated Full-Stack Developer with a strong background in PHP (Symfony & Laravel) and a growing expertise in JavaScript, React, and Node.js. With a keen eye for clean code and scalable architectures, I enjoy building high-performing web applications that deliver seamless user experiences.",
-    "aboutmeR1":"Skills: PHP (Symfony, Laravel), JavaScript (ES6+), React, Node.js, REST APIs, SQL & NoSQL Databases",
-    "aboutmeR2":"Looking for: Remote opportunities in modern full-stack development",
-    "aboutmeR3":"Passionate about: Writing maintainable code, problem-solving, and continuous learning",
-    "skills":"Skills",
-    "subSkills":"I enjoy diving into and learning new things. Here's a list of technologies I've worked with",
-    "projects":"Projects",
-    "subProjects":"Check out some of my most recent work",
-    "contact":"Contact",
-      "subContact":"Send me a message",
-        "formButton":"Send",
-          "":""
+  "navHome": "Home",
+  "navAbout": "About",
+  "navSkills": "Skills",
+  "navProjects": "Projects",
+  "navConatact": "Contact",
   
-  }
+  "homeTitle": "I'm a Full Stack Web Developer",
+  "homeSubTitle": "I have 5 years of experience in graphic design and web development. Currently, I focus on building scalable web applications using technologies like React, Tailwind and Bootstrap.",
+  "homeButton": "About Me",
   
+  "aboutmeL": "Hi, I'm a Full-Stack Developer | PHP (Laravel) → React | Passionate about scalable web apps.",
+  
+  "aboutmeR": "I am a dedicated Full-Stack Developer with a strong background in PHP (Laravel) and growing expertise in JavaScript, React, and Node.js. I enjoy writing clean code and building high-performing web applications that deliver seamless user experiences.",
+  
+  "aboutmeR1": "Skills: PHP (Laravel), JavaScript (ES6+), React, REST APIs, SQL & NoSQL Databases",
+  "aboutmeR2": "Looking for: Remote opportunities in modern full-stack development",
+  "aboutmeR3": "Passionate about: Writing maintainable code, problem-solving, and continuous learning",
+  
+  "skills": "Skills",
+  "subSkills": "I enjoy learning new technologies and expanding my skill set. Here's a list of tools and frameworks I've worked with.",
+  
+  "projects": "Projects",
+  "subProjects": "Check out some of my recent work.",
+  
+  "contact": "Contact",
+  "subContact": "Send me a message",
+  
+  "formButton": "Send",
+
+  "project1": "Developed a fully responsive web application for creating and showcasing professional profiles tailored for craftsmen and technicians, featuring multilingual support (i18n). Built with React using modular and clean code architecture, focusing on seamless user experience through smooth scrolling and dynamic components. The app includes user authentication, profile management, and integration with external platforms.",
+
+
+  "project2":"Meine Anzeigen is a multi-category classifieds web application running in production. It allows users to create, browse, and manage ads across categories such as vehicles, electronics, real estate, services, and more. The platform is designed for scalability, multilingual support, and a modern, responsive user experience.",
+
+  "project3": "A modern web application built with Laravel 12 on the backend and Blade + Tailwind CSS on the frontend, designed to be small, clean, and fast. It uses MySQL / SQLite for the database, generates PDFs with dompdf, and sends notifications via email and Twilio (SMS / WhatsApp). Authentication is handled with Laravel Breeze or Jetstream, providing secure and easy user management."
+
+}

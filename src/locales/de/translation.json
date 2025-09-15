@@ -1,28 +1,34 @@
 {
-   
-  "navHome":"Home",
-  "navAbout":"Uber mich",
-  "navSkills":"Fähigkeiten",
-  "navProjects":"Projekte",
-  "navConatact":"Kontakt",  
-  "homeTile":  "Ich bin ein Full Stack Web Developer",
-    "homeSubTitle": "Ich habe 4 Jahre Erfahrung im Grafikdesign und in der Webentwicklung. Derzeit arbeite ich gerne an Webanwendungen mit Technologien wie React, Tailwind, Next.js und Mongodb.",
-    "homeButton": "Uber mich",
-    "aboutmeL": "Hallo. Ich bin ein Full-Stack-Entwickler | PHP (Laravel) → React & Node.js |Leidenschaft für skalierbare Web-Apps.",
-  "aboutmeR": "Ich bin ein engagierter Full-Stack-Entwickler mit fundierten Kenntnissen in PHP (Symfony & Laravel) und wachsender Expertise in JavaScript, React und Node.js. Mit einem scharfen Auge für sauberen Code und skalierbare Architekturen erstelle ich gerne leistungsstarke Webanwendungen, die nahtlose Benutzererlebnisse bieten.",
-  "aboutmeR1":"Kenntnisse: PHP (Symfony, Laravel), JavaScript (ES6+), React, Node.js, REST-APIs, SQL- und NoSQL-Datenbanken",
-  "aboutmeR2":"Auf der Suche nach: Remote-Möglichkeiten in der modernen Full-Stack-Entwicklung",
-  "aboutmeR3":"Leidenschaft für: das Schreiben von wartbarem Code, Problemlösung und kontinuierliches Lernen",
-  "skills":"Fähigkeiten",
-  "subSkills":"Ich tauche gern in neue Dinge ein und lerne gerne Neues. Hier ist eine Liste der Technologien, mit denen ich gearbeitet habe",
-  "projects":"Projekte",
-  "subProjects":"Schauen Sie sich einige meiner neuesten Arbeiten an",
-  "contact":"Kontakt",
-  "subContact":"Senden Sie mir eine Nachricht",
-      "formButton":"Schicken",
-        "":"",
-          "":""
+  "navHome": "Startseite",
+  "navAbout": "Über mich",
+  "navSkills": "Fähigkeiten",
+  "navProjects": "Projekte",
+  "navConatact": "Kontakt",
+  
+  "homeTitle": "Ich bin ein Full Stack Webentwickler",
+  "homeSubTitle": "Ich habe 5 Jahre Erfahrung in Grafikdesign und Webentwicklung. Derzeit konzentriere ich mich auf die Entwicklung skalierbarer Webanwendungen mit Technologien wie React, Tailwind und Bootstrap.",
+  "homeButton": "Über mich",
+  
+  "aboutmeL": "Hallo, ich bin Full-Stack Entwickler | PHP (Laravel) → React | Leidenschaftlich für skalierbare Webanwendungen.",
+  
+  "aboutmeR": "Ich bin ein engagierter Full-Stack Entwickler mit fundierten Kenntnissen in PHP (Laravel) und wachsender Expertise in JavaScript, React und Node.js. Ich schreibe gerne sauberen Code und entwickle leistungsstarke Webanwendungen, die nahtlose Benutzererfahrungen bieten.",
+  
+  "aboutmeR1": "Fähigkeiten: PHP (Laravel), JavaScript (ES6+), React, REST APIs, SQL- & NoSQL-Datenbanken",
+  "aboutmeR2": "Suche: Remote-Möglichkeiten in moderner Full-Stack-Entwicklung",
+  "aboutmeR3": "Leidenschaftlich für: Wartbaren Code, Problemlösung und kontinuierliches Lernen",
+  
+  "skills": "Fähigkeiten",
+  "subSkills": "Ich lerne gerne neue Technologien und erweitere ständig mein Wissen. Hier ist eine Liste von Tools und Frameworks, mit denen ich gearbeitet habe.",
+  
+  "projects": "Projekte",
+  "subProjects": "Schauen Sie sich einige meiner jüngsten Arbeiten an.",
+  
+  "contact": "Kontakt",
+  "subContact": "Schicken Sie mir eine Nachricht",
+  
+  "formButton": "Senden",
+     "project1":"Entwicklung einer vollständig responsiven Webanwendung zur Erstellung und Präsentation von professionellen Profilen für Handwerker und Techniker mit mehrsprachiger Unterstützung (i18n). Die Anwendung wurde mit React entwickelt und nutzt eine modulare und klare Code-Architektur. Der Fokus liegt auf einem nahtlosen Benutzererlebnis durch reibungsloses Scrollen und dynamische Komponenten. Die App umfasst Benutzerauthentifizierung, Profilverwaltung und die Integration mit externen Plattformen.",
+  "project2":"Meine Anzeigen ist eine Kleinanzeigen-Webanwendung mit mehreren Kategorien, die bereits in der Produktion läuft. Sie ermöglicht Nutzern das Erstellen, Durchsuchen und Verwalten von Anzeigen in verschiedenen Kategorien wie Fahrzeugen, Elektronik, Immobilien, Dienstleistungen und mehr. Die Plattform ist auf Skalierbarkeit, mehrsprachige Unterstützung und ein modernes, responsives Benutzererlebnis ausgelegt.",
 
-  
-  }
-  
+       "project3":"Eine moderne Webanwendung mit Laravel 12 im Backend und Blade + Tailwind CSS im Frontend. Sie ist klein, übersichtlich und schnell. Sie nutzt MySQL/SQLite für die Datenbank, generiert PDFs mit dompdf und versendet Benachrichtigungen per E-Mail und Twilio (SMS/WhatsApp). Die Authentifizierung erfolgt mit Laravel Breeze oder Jetstream und ermöglicht so eine sichere und einfache Benutzerverwaltung."
+}

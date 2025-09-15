@@ -8,265 +8,258 @@ const Works = () => {
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         {/* Section header */}
         <div className="pb-8 w-full flex justify-center items-center flex-col">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-800 border-cyan-500">
+          <p className="text-4xl font-bold inline border-b-4 text-gray-800 border-orange-500">
             {t("projects")}
           </p>
           <p className="py-5 text-2xl text-gray-800">{t("subProjects")}</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4">
-
-     {/* Project 0 */}
-
-     <div
-            style={{ backgroundImage: `url('/projects/pasta.png')` }}
-            className="card shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div bg-no-repeat bg-cover bg-center h-65"
-          >
-            {/* Hover content */}
-            <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
-                <p className="text-white">True Pasta Lovers</p>
-                <p className="text-center line-clamp-7">
-                Pasta Recipes App – A modern web application built with Laravel and Tailwind CSS, designed for exploring and managing pasta recipes. Users can browse, add, and edit recipes, making it a simple yet effective tool for pasta enthusiasts.
-       
-                </p>
-              </div>
-              {/* Action buttons */}
-              <div className="text-center">
-                <a href="https://darkslategrey-baboon-511135.hostingersite.com/">
-                  <button className=" shadow-lg shadow-[#040c16] text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Visit
-                  </button>
-                </a>
-                <a href="https://darkslategrey-baboon-511135.hostingersite.com/">
-                  <button className=" shadow-lg shadow-[#040c16]  text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
+        <div className="pb-4 grid sm:grid-cols-2 md:grid-cols-1 gap-4">
           {/* Project 1 */}
-          <div
-            style={{ backgroundImage: `url('/projects/weather.jpg')` }}
-            className="card shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div bg-no-repeat bg-cover bg-center h-65"
+          <a
+            href="#"
+            className="flex flex-col md:flex-row bg-white border border-gray-200 rounded-lg shadow-lg hover:bg-gray-100 max-w-4xl mx-auto overflow-hidden"
           >
-            {/* Hover content */}
-            <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-1 rounded-lg">
-                <p className="text-white">Weather App  Tailwind CSS & JS</p>
-                <p className="text-center line-clamp-7">
-                  A simple weather app built with JavaScript and styled with Tailwind CSS. It fetches real-time weather data from
-                  a public API, providing users with temperature, humidity, and conditions for any city.
-                </p>
-              </div>
-              {/* Action buttons */}
-              <div className="text-center">
-                <a href="https://lightpink-peafowl-874363.hostingersite.com/">
-                  <button className=" shadow-lg shadow-[#040c16]  text-center rounded-lg px-3 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Visit
-                  </button>
-                </a>
-                <a href="https://github.com/jvorte/weather-forecast-app">
-                  <button className=" shadow-lg shadow-[#040c16]  text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
+            {/* Image */}
+            <img
+              src="/projects/linkroom.jpg"
+              alt="Link Room"
+              className="w-full h-64 md:h-auto md:w-80 object-cover"
+            />
 
-          {/* Project 2 */}
-          <div
-         style={{ backgroundImage: `url('/projects/crud.jpg')` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div bg-no-repeat bg-cover bg-center h-65"
-          >
-            {/* Hover content */}
-            <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
-                <p className="text-white">PHP & React.js CRUD App</p>
-                <p className="text-center line-clamp-7">
-             Application This repository contains a simple CRUD (Create, Read, Update, Delete)
-                 application built using PHP for the backend and React.js for the frontend.
+            {/* Content */}
+            <div className="flex flex-col justify-between p-4 flex-1">
+              {/* Title & Description */}
+              <div>
+                <h5 className="text-2xl font-bold text-gray-900 mb-2">
+                  Link Room
+                </h5>
+                <p className="text-gray-700 text-sm mb-4 line-clamp-6">
+                    {t('project1')}
                 </p>
               </div>
-              {/* Action buttons */}
-              <div className=" text-center">
-                <a href="https://lightgray-stinkbug-893714.hostingersite.com/">
-                  <button className=" shadow-lg shadow-[#040c16]  text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Visit
-                  </button>
-                </a>
-                <a href="https://github.com/jvorte/PHP-React.js-CRUD">
-                  <button className=" shadow-lg shadow-[#040c16]  text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
 
-          {/* Project 3 */}
-          <div
-             style={{ backgroundImage: `url('/projects/eshop.jpg')` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div  bg-no-repeat bg-cover bg-center h-65"
-          >
-            {/* Hover content */}
-            <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
-                <p className="text-white">ReactShop</p>
-                <p className="text-center line-clamp-7">
-                This is a simple e-commerce web application built with React. The application 
-                allows users to browse products, add them to the cart, and proceed to checkout.
-                </p>
+              {/* Technologies */}
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="text-white bg-blue-500 px-2 py-1 rounded">
+                  Laravel 12
+                </span>
+                <span className="text-white bg-purple-500 px-2 py-1 rounded">
+                  Tailwind CSS
+                </span>
+                <span className="text-white bg-green-500 px-2 py-1 rounded">
+                  React Components
+                </span>
+                <span className="text-white bg-gray-700 px-2 py-1 rounded">
+                  Authentication
+                </span>
+                <span className="text-white bg-gray-700 px-2 py-1 rounded">
+                  Profile Management
+                </span>
+                <span className="text-white bg-indigo-500 px-2 py-1 rounded">
+                  De/En
+                </span>
+                <span className="text-white bg-pink-500 px-2 py-1 rounded">
+                  Responsive Design
+                </span>
+                <span className="text-white bg-yellow-500 px-2 py-1 rounded">
+                  Smooth Scrolling
+                </span>
+                <span className="text-white bg-teal-500 px-2 py-1 rounded">
+                  API Integration
+                </span>
               </div>
+
               {/* Action buttons */}
-              <div className=" text-center">
-                <a href="https://navajowhite-narwhal-391117.hostingersite.com/">
-                  <button className=" shadow-lg shadow-[#040c16]  text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
+              <div className="flex flex-wrap gap-2">
+                <a
+                  href="https://linkroom.pro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-4 py-2 bg-white text-gray-700 font-bold rounded shadow hover:bg-gray-100 transition">
                     Visit
                   </button>
                 </a>
-                <a href="https://github.com/jvorte/ReactShop">
-                  <button className=" shadow-lg shadow-[#040c16]  text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
+                <a
+                  href="https://github.com/jvorte/linkroom"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-4 py-2 bg-white text-gray-700 font-bold rounded shadow hover:bg-gray-100 transition">
                     Code
                   </button>
                 </a>
               </div>
             </div>
-          </div>
+          </a>
+
+          {/* Project 2 - Meine Anzeigen */}
+          <a
+            href="#"
+            className="flex flex-col md:flex-row bg-white border border-gray-200 rounded-lg shadow-lg hover:bg-gray-100 max-w-4xl mx-auto overflow-hidden"
+          >
+            {/* Image */}
+            <img
+              src="/projects/meine-anzeigen.jpg"
+              alt="Meine Anzeigen"
+              className="w-full h-64 md:h-auto md:w-80 object-cover"
+            />
+
+            {/* Content */}
+            <div className="flex flex-col justify-between p-4 flex-1">
+              {/* Title & Description */}
+              <div>
+                <h5 className="text-2xl font-bold text-gray-900 mb-2">
+                  Meine Anzeigen
+                </h5>
+                <p className="text-gray-700 text-sm mb-4 line-clamp-7">
+                 {t('project2')}
+                </p>
+              </div>
+
+              {/* Technologies (προαιρετικά) */}
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="text-white bg-blue-500 px-2 py-1 rounded">
+                  Laravel 12
+                </span>
+                <span className="text-white bg-purple-500 px-2 py-1 rounded">
+                  Tailwind CSS
+                </span>
+                <span className="text-white bg-green-500 px-2 py-1 rounded">
+                  React Components
+                </span>
+                <span className="text-white bg-gray-700 px-2 py-1 rounded">
+                  Authentication
+                </span>
+                <span className="text-white bg-gray-700 px-2 py-1 rounded">
+                  Profile Management
+                </span>
+                <span className="text-white bg-indigo-500 px-2 py-1 rounded">
+                  De/En
+                </span>
+                <span className="text-white bg-pink-500 px-2 py-1 rounded">
+                  Responsive Design
+                </span>
+                <span className="text-white bg-yellow-500 px-2 py-1 rounded">
+                  Smooth Scrolling
+                </span>
+                <span className="text-white bg-teal-500 px-2 py-1 rounded">
+                  SEO Optimized
+                </span>
+                <span className="text-white bg-red-500 px-2 py-1 rounded">
+                  API Integration
+                </span>
+              </div>
+
+              {/* Action buttons */}
+              <div className="flex flex-wrap gap-2">
+                <a
+                  href="https://meineanzeigen.pro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-4 py-2 bg-white text-gray-700 font-bold rounded shadow hover:bg-gray-100 transition">
+                    Visit
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/jvorte/meine-anzeigen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-4 py-2 bg-white text-gray-700 font-bold rounded shadow hover:bg-gray-100 transition">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </a>
+
+
+
+      {/* Project 3 - Dashboard */}
+          <a
+            href="#"
+            className="flex flex-col md:flex-row bg-white border border-gray-200 rounded-lg shadow-lg hover:bg-gray-100 max-w-4xl mx-auto overflow-hidden"
+          >
+            {/* Image */}
+            <img
+              src="/projects/dashboard.jpg"
+              alt="Meine Anzeigen"
+              className="w-full h-64 md:h-auto md:w-80 object-cover"
+            />
+
+            {/* Content */}
+            <div className="flex flex-col justify-between p-4 flex-1">
+              {/* Title & Description */}
+              <div>
+                <h5 className="text-2xl font-bold text-gray-900 mb-2">
+                Admin Dashboard
+                </h5>
+                <p className="text-gray-700 text-sm mb-4 line-clamp-7">
+                 {t('project3')}
+                </p>
+              </div>
+
+              {/* Technologies () */}
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="text-white bg-blue-500 px-2 py-1 rounded">
+                  Laravel 12
+                </span>
+                <span className="text-white bg-purple-500 px-2 py-1 rounded">
+                  Tailwind CSS
+                </span>
+                <span className="text-white bg-green-500 px-2 py-1 rounded">
+                  React Components
+                </span>
+                <span className="text-white bg-gray-700 px-2 py-1 rounded">
+                  Authentication
+                </span>
+                <span className="text-white bg-gray-700 px-2 py-1 rounded">
+                  Profile Management
+                </span>
+           
+                <span className="text-white bg-pink-500 px-2 py-1 rounded">
+                  Responsive Design
+                </span>
+        
+              </div>
+
+              {/* Action buttons */}
+              <div className="flex flex-wrap gap-2">
+                <a
+                  href="https://green-chamois-604233.hostingersite.com/dashboard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-4 py-2 bg-white text-gray-700 font-bold rounded shadow hover:bg-gray-100 transition">
+                    Visit
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/jvorte/laravel-order-invoice-tool/tree/main"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-4 py-2 bg-white text-gray-700 font-bold rounded shadow hover:bg-gray-100 transition">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </a>
+
 
           {/* Project 4 */}
-          <div
-          style={{ backgroundImage: `url('/projects/veterinary.jpg')` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div bg-no-repeat bg-cover bg-center h-65"
-          >
-            {/* Hover content */}
-            <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
-                <p className="text-white">Veterinary</p>
-                <p className="text-center line-clamp-7">
-                A simple and efficient appointment booking system where only customers can schedule appointments.
-                 Built with PHP and SQL, this project ensures a smooth and reliable booking experience.
-                </p>
-              </div>
-              {/* Action buttons */}
-              <div className=" text-center">
-                <a href="https://limegreen-alpaca-415646.hostingersite.com/">
-                  <button className=" shadow-lg shadow-[#040c16]  text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Visit
-                  </button>
-                </a>
-                <a href="https://github.com/jvorte/Veterinary-php_ap-/tree/master">
-                  <button className=" shadow-lg shadow-[#040c16]  text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
 
           {/*projects 5 */}
 
-          <div
-            style={{ backgroundImage: `url('/projects/training.jpg')` }}
-            className="card shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div bg-no-repeat bg-cover bg-center h-65"
-          >
-            {/* Hover content */}
-            <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
-                <p className="text-white">Dog Training</p>
-                <p className="text-center line-clamp-7 ">
-                A user-friendly platform offering dog training services with a focus on building strong, positive relationships 
-                between dogs and their owners. The site features personalized training plans and an easy-to-navigate interface.
-             
-               
-                </p>
-              </div>
-              {/* Action buttons */}
-              <div className=" text-center">
-                <a href="https://snow-hyena-132513.hostingersite.com/">
-                  <button className=" shadow-lg shadow-[#040c16]  text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Visit
-                  </button>
-                </a>
-                <a href="https://github.com/jvorte/dog_training/tree/master">
-                  <button className=" shadow-lg shadow-[#040c16]  text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
           {/* Project 6 */}
-
-          <div
-            style={{ backgroundImage: `url('/projects/portal.jpg')` }}
-            className="card shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div bg-no-repeat bg-cover bg-center h-65"
-          >
-            {/* Hover content */}
-            <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
-                <p className="text-white">User Login Portal</p>
-                <p className="text-center line-clamp-7 text-center">
-                A secure and simple login portal where users can access their accounts by entering a 
-                username and password. The platform also offers password recovery and account creation options. 
-                Designed with user experience in mind, it ensures easy access and interaction for both new and returning users. 
-       
-                </p>
-              </div>
-              {/* Action buttons */}
-              <div className="text-center">
-                <a href="https://lightcyan-crocodile-961873.hostingersite.com/">
-                  <button className=" shadow-lg shadow-[#040c16] text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Visit
-                  </button>
-                </a>
-                <a href="https://github.com/jvorte/myportal/tree/master">
-                  <button className=" shadow-lg shadow-[#040c16]  text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
 
           {/* Project 7 */}
 
-          <div
-            style={{ backgroundImage: `url('/projects/hair.jpg')` }}
-            className="card shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div bg-no-repeat bg-cover bg-center h-65"
-          >
-            {/* Hover content */}
-            <div className="opacity-0 group-hover:opacity-100 m-8 flex justify-center items-center flex-col">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg">
-                <p className="text-white">Hair-Studio</p>
-                <p className="text-center line-clamp-7 text-center">
-                Hair Studio is a simple, single-page website built with React. This website is designed for a hair salon, 
-                showcasing the services, contact information, 
-                and a brief introduction to the salon. It aims to provide an elegant and responsive user experience for visitors.
-                </p>
-              </div>
-              {/* Action buttons */}
-              <div className="text-center">
-                <a href="https://lemonchiffon-wombat-119714.hostingersite.com/">
-                  <button className=" shadow-lg shadow-[#040c16]  text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Visit
-                  </button>
-                </a>
-                <a href="https://github.com/jvorte/Hair-Studio/tree/master">
-                  <button className=" shadow-lg shadow-[#040c16]  text-center rounded-lg px-4 py-1 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-
           {/* Project 8 */}
-     
 
           {/* end of projects */}
         </div>
