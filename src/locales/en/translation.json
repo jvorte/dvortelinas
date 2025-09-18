@@ -33,6 +33,6 @@
 
   "project2":"Meine Anzeigen is a multi-category classifieds web application running in production. It allows users to create, browse, and manage ads across categories such as vehicles, electronics, real estate, services, and more. The platform is designed for scalability, multilingual support, and a modern, responsive user experience.",
 
-  "project3": "A modern web application built with Laravel 12 on the backend and Blade + Tailwind CSS on the frontend, designed to be small, clean, and fast. It uses MySQL / SQLite for the database, generates PDFs with dompdf, and sends notifications via email and Twilio (SMS / WhatsApp). Authentication is handled with Laravel Breeze or Jetstream, providing secure and easy user management."
-
+  "project3": "A modern web application built with Laravel 12 on the backend and Blade + Tailwind CSS on the frontend, designed to be small, clean, and fast. It uses MySQL / SQLite for the database, generates PDFs with dompdf, and sends notifications via email and Twilio (SMS / WhatsApp). Authentication is handled with Laravel Breeze or Jetstream, providing secure and easy user management.",
+ "project4":"ServicesDb is a Laravel-based application designed to manage vehicles and their maintenance history. Users can register their vehicles, log services with details such as mileage, date, and notes, and upload attachments for better record-keeping. The system also supports reminders for upcoming maintenance, making it a practical tool for individuals and small garages."
 }

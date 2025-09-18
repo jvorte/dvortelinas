@@ -15,6 +15,7 @@ const Works = () => {
         </div>
 
         <div className="pb-4 grid sm:grid-cols-2 md:grid-cols-1 gap-4">
+
           {/* Project 1 */}
           <a
             href="#"
@@ -239,6 +240,79 @@ const Works = () => {
                 </a>
                 <a
                   href="https://github.com/jvorte/laravel-order-invoice-tool/tree/main"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-4 py-2 bg-white text-gray-700 font-bold rounded shadow hover:bg-gray-100 transition">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </a>
+
+
+               {/* Project 4 - Dashboard */}
+          <a
+            href="#"
+            className="flex flex-col md:flex-row bg-white border border-gray-200 rounded-lg shadow-lg hover:bg-gray-100 max-w-4xl mx-auto overflow-hidden"
+          >
+            {/* Image */}
+            <img
+              src="/projects/servicesDb.jpg"
+              alt="Meine Anzeigen"
+              className="w-full h-64 md:h-auto md:w-80 object-cover"
+            />
+
+            {/* Content */}
+            <div className="flex flex-col justify-between p-4 flex-1">
+              {/* Title & Description */}
+              <div>
+                <h5 className="text-2xl font-bold text-gray-900 mb-2">
+                ServicesDb
+                </h5>
+                <p className="text-gray-700 text-sm mb-4 line-clamp-7">
+                 {t('project4')}
+                </p>
+              </div>
+
+              {/* Technologies () */}
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="text-white bg-blue-500 px-2 py-1 rounded">
+                  Laravel 12
+                </span>
+                <span className="text-white bg-purple-500 px-2 py-1 rounded">
+                  Tailwind CSS
+                </span>
+                <span className="text-white bg-green-500 px-2 py-1 rounded">
+                  React Components
+                </span>
+                <span className="text-white bg-gray-700 px-2 py-1 rounded">
+                  Authentication
+                </span>
+                <span className="text-white bg-gray-700 px-2 py-1 rounded">
+                  Profile Management
+                </span>
+           
+                <span className="text-white bg-pink-500 px-2 py-1 rounded">
+                  Responsive Design
+                </span>
+        
+              </div>
+
+              {/* Action buttons */}
+              <div className="flex flex-wrap gap-2">
+                <a
+                  href="https://mediumblue-pheasant-701953.hostingersite.com/dashboard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-4 py-2 bg-white text-gray-700 font-bold rounded shadow hover:bg-gray-100 transition">
+                    Visit
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/jvorte/servicesDb/tree/main"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
