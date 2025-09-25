@@ -22,16 +22,20 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="w-full min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-800 py-20"
+      className="w-full min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900 py-20"
     >
       <div className="max-w-[1100px] mx-auto px-4 flex flex-col justify-center w-full h-full">
+        {/* Title */}
         <div className="w-full text-center mb-12">
-          <h2 className="text-4xl font-extrabold border-b-4 border-orange-500 inline-block mb-4">
+          <h2 className="text-5xl sm:text-4xl font-extrabold border-b-4 border-orange-500 inline-block mb-4">
             {t('skills')}
           </h2>
-          <p className="text-xl text-gray-600">{t('subSkills')}</p>
+          <p className="text-lg sm:text-xl text-gray-800 font-medium">
+            {t('subSkills')}
+          </p>
         </div>
 
+        {/* Skills grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {skills.map((skill, index) => (
             <div
@@ -43,7 +47,9 @@ const Skills = () => {
                 alt={skill.alt}
                 className="w-16 h-16 mb-2"
               />
-              <span className="text-sm font-medium text-gray-700">{skill.alt}</span>
+              <span className="text-base font-semibold text-gray-900">
+                {skill.alt}
+              </span>
             </div>
           ))}
         </div>

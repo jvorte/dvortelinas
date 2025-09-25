@@ -14,10 +14,10 @@ const Home = () => {
 
         {/* Left side (text) */}
         <div className="flex flex-col justify-center flex-1">
-          <h2 className="text-4xl sm:text-7xl font-bold text-black">
+          <h2 className="text-4xl sm:text-7xl font-extrabold text-gray-900">
             {t('homeTitle')}
           </h2>
-          <h3 className="text-gray-900 py-4 max-w-md">
+          <h3 className="text-lg sm:text-xl font-medium text-gray-800 py-4 max-w-md leading-relaxed">
             {t('homeSubTitle')}
           </h3>
           <div>
@@ -25,7 +25,7 @@ const Home = () => {
               to="about"
               smooth
               duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-slate-800 to-slate-800 cursor-pointer"
+              className="group text-white font-semibold tracking-wide w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-slate-900 to-slate-700 cursor-pointer shadow-md"
             >
               {t('homeButton')}
               <span className="group-hover:rotate-90 duration-300">
@@ -48,6 +48,5 @@ const Home = () => {
     </div>
   );
 };
-
 
 export default Home;

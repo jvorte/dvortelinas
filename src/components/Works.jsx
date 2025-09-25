@@ -18,7 +18,7 @@ const Works = () => {
 
           {/* Project 1 */}
           <a
-            href="#"
+            href="https://linkroom.pro/"
             className="flex flex-col md:flex-row bg-white border border-gray-200 rounded-lg shadow-lg hover:bg-gray-100 max-w-4xl mx-auto overflow-hidden"
           >
             {/* Image */}
@@ -35,7 +35,7 @@ const Works = () => {
                 <h5 className="text-2xl font-bold text-gray-900 mb-2">
                   Link Room
                 </h5>
-                <p className="text-gray-700 text-sm mb-4 line-clamp-6">
+                <p className="text-base font-medium text-gray-800 mb-4 line-clamp-6">
                     {t('project1')}
                 </p>
               </div>
@@ -97,7 +97,7 @@ const Works = () => {
 
           {/* Project 2 - Meine Anzeigen */}
           <a
-            href="#"
+            href="https://meineanzeigen.pro/"
             className="flex flex-col md:flex-row bg-white border border-gray-200 rounded-lg shadow-lg hover:bg-gray-100 max-w-4xl mx-auto overflow-hidden"
           >
             {/* Image */}
@@ -114,7 +114,7 @@ const Works = () => {
                 <h5 className="text-2xl font-bold text-gray-900 mb-2">
                   Meine Anzeigen
                 </h5>
-                <p className="text-gray-700 text-sm mb-4 line-clamp-7">
+               <p className="text-base font-medium text-gray-800 mb-4 line-clamp-6">
                  {t('project2')}
                 </p>
               </div>
@@ -181,7 +181,7 @@ const Works = () => {
 
       {/* Project 3 - Dashboard */}
           <a
-            href="#"
+            href="https://green-chamois-604233.hostingersite.com/login"
             className="flex flex-col md:flex-row bg-white border border-gray-200 rounded-lg shadow-lg hover:bg-gray-100 max-w-4xl mx-auto overflow-hidden"
           >
             {/* Image */}
@@ -198,7 +198,7 @@ const Works = () => {
                 <h5 className="text-2xl font-bold text-gray-900 mb-2">
                 Admin Dashboard
                 </h5>
-                <p className="text-gray-700 text-sm mb-4 line-clamp-7">
+               <p className="text-base font-medium text-gray-800 mb-4 line-clamp-6">
                  {t('project3')}
                 </p>
               </div>
@@ -254,7 +254,7 @@ const Works = () => {
 
                {/* Project 4 - Dashboard */}
           <a
-            href="#"
+            href="https://servicesdb.site/login"
             className="flex flex-col md:flex-row bg-white border border-gray-200 rounded-lg shadow-lg hover:bg-gray-100 max-w-4xl mx-auto overflow-hidden"
           >
             {/* Image */}
@@ -271,7 +271,7 @@ const Works = () => {
                 <h5 className="text-2xl font-bold text-gray-900 mb-2">
                 ServicesDb
                 </h5>
-                <p className="text-gray-700 text-sm mb-4 line-clamp-7">
+             <p className="text-base font-medium text-gray-800 mb-4 line-clamp-6">
                  {t('project4')}
                 </p>
               </div>
@@ -303,7 +303,7 @@ const Works = () => {
               {/* Action buttons */}
               <div className="flex flex-wrap gap-2">
                 <a
-                  href="https://mediumblue-pheasant-701953.hostingersite.com/dashboard"
+                  href="https://servicesdb.site/dashboard"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
